@@ -1,0 +1,253 @@
+body {
+	padding: 0px;
+	margin: 0px;
+    overflow-x:hidden;
+}
+
+.full{
+    background-color: rgba(249, 231, 250, 0.519);
+}
+
+.container {
+	width: 100%;
+    margin: 0 auto;
+	display: block;
+}
+
+.header {
+	width: 100%;
+	display: block;
+    background-color: #0f1128;
+    display: flex;
+    height: 70px;
+}
+
+.khung{
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+}
+.khung a img{
+    height: 50px;
+    padding-left: 20px;
+}
+.search input{
+    color: #8a8484;
+    background-color:#1d1d39;
+    margin-left: 350px;
+    height: 40px;
+    width: 280px;
+    border: 0;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.search li{
+    list-style-type: none;
+}
+.search li a{
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        color: #2196F3;
+        border-radius: 5px ;
+        
+    }
+.search a:hover {
+        border: 2px solid rgb(49, 49, 255);
+        text-decoration: none; 
+    }
+.content {
+    width: 78%;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid grey;
+ 
+    flex-direction: row;
+}
+.list{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.list ul {
+    display: flex;
+
+}
+
+.list ul li {
+    list-style-type: none;
+    position: relative; 
+}
+
+.list ul li a {
+    text-decoration: none;
+    color:gray;
+    font-size: 18px;
+}
+.list ul li:not(.home-link)::before {
+    content: "/"; 
+    margin:  5px; 
+
+}
+.list ul li a:hover{
+    color: #f986c6;
+}
+.main{
+    width: 100%;
+    height: max-content;
+    background-color: #8a8484;
+    position: relative;
+}
+.main1{
+    width: 78%;
+    max-width: 100%;
+    height: 40px;
+    position: sticky;
+    margin: 0 auto;
+    top: 0;
+    background-color: #333;
+    transition: width 0.5s;
+    border: 1px solid #333;
+}
+.main1.full-width {
+    width: 100%;
+}
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 10px;
+}
+.content1 li{
+    list-style-type: none;
+    padding-right: 25px;
+}
+.content1 li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+       
+}
+
+.content1 li a img{
+    width: 25px;
+    
+}
+.content1 li a img:hover{
+    background-color: rgb(252, 88, 115);
+}
+
+
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.main img{
+    width: 50%;
+    
+}
+.read{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read a{
+    text-decoration: none;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    background-color: rgb(206, 23, 84);
+}
+.read a:hover{
+    color: palevioletred;
+
+}
+
+.cmt{
+    padding-left: 170px;
+    position: relative;
+
+}
+.comment{
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.input-comment{
+    width: 85%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 70px;
+    margin-left: 20px;
+    padding-right: 90px;
+    padding-top: 10px;
+    font-size: 16px;
+    max-height: 175px;
+}    
+.input-comment:hover{
+    border: 1px solid blue;
+}
+.button-comment{
+    margin-top: 30px;
+    margin-right: 200px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    z-index: 20000;
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+.button-comment:hover{
+    background-color: pink;
+}
+.user{
+    display: flex;
+    margin-left: 20px;
+}
+.user span{
+    padding: 5px;
+}
+.name{
+    color: brown;
+    font-weight: bold;
+}
+.chap{
+    color: blue;
+}
+.level{
+    height: 10px;
+    color: white;
+    background-color:rgba(191, 125, 125, 0.775);
+    border: 1px;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 15px;
+}
+.day{
+    font-size: 10px;
+}
+.user-comment{
+    width: 85%;
+    background-color: rgba(125, 125, 125, 0.5);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.user-comment span{
+    margin-left: 5px;
+}
