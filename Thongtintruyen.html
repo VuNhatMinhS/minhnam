@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header">
                 <div class="khung">
-                    <a class="" href="">
+                    <a class="" href="index.html">
                         <img src="https://goctruyentranhvui.com/contents/images/logo.png" alt="">
                     </a>
                 </div>
@@ -22,7 +22,7 @@
                 </div>
                 <ul class="search">
                     <li><input type="text" placeholder="Nhập từ khóa" name="search"></li>
-                    <li><a href="/trang-chu" class="active">Trang Chủ</a></li>
+                    <li><a href="index.html" class="active">Trang Chủ</a></li>
                     <li><a href="/danh-sach">Danh Sách</a></li>
                     <li><a href="/lien-he">Donate</a></li>
                 </ul>
@@ -30,7 +30,7 @@
             <div class="content">
                 <div class="list">
                     <ul>
-                        <li class="home-link"><a href=""><img src="https://tse4.mm.bing.net/th?id=OIP.gUFOcWkBJqJzZ6xCyf3EswHaHM&pid=Api&P=0&h=220" alt="">Trang Chủ</a></li>
+                        <li class="home-link"><a href="index.html"><img src="https://tse4.mm.bing.net/th?id=OIP.gUFOcWkBJqJzZ6xCyf3EswHaHM&pid=Api&P=0&h=220" alt="">Trang Chủ</a></li>
                         <li><a href="">Truyện</a></li>
                         <li><a href="" style="color: #f986c6;">Tôi Thăng Cấp Một Mình</a></li>
                     </ul>
@@ -120,7 +120,7 @@
                          </tr>
                     </thead>
                     <tbody>
-                            <tr class="table-row">
+                            <tr class="table-row" id="custom-link">
                               <td style="width: 10%;text-align: center;">#16</td>
                               <td style="width: 25%;text-align: start;">ABC</td>
                               <td style="width: 20%;text-align: center;">Tu Tam</td>
@@ -345,5 +345,9 @@ var isDarkMode = false;
         isDarkMode = true;
     }
 });
+document.getElementById("custom-link").addEventListener("click", function() {
+    window.location.href = "doctruyen.html";
+});
+
      </script>
 </body>
